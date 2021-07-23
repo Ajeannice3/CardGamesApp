@@ -1,7 +1,7 @@
 # CardGamesApp
 ASP.NET Core w/Razor pages app containing different card games.  The scripts to create the SQL database and tables are in the /wwwroot/sql folder.
 
-Known issues in the 1st commit:
+Known issues in the 1st commit:        
 1 - The form field validation in the Razor pages is not working properly.     
 2 - JS - 2 issues in the stand() function:  1) if the dealerHandTotal = playerHandTotal, when you press the Stand button, it should add a card to the dealer's hand but nothing happens.  2) When you press the Stand button, the while loop continues to execute for several iterations after the dealerHandTotal > 21.     
 3 - JS - When a player gets blackjack on the first hand, the bet amount and totals are not updated.     
