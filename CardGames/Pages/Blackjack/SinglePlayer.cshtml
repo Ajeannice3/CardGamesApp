@@ -1,0 +1,99 @@
+﻿@page
+@model CardGames.Pages.Blackjack.SinglePlayerModel
+
+@{
+    ViewData["Title"] = "SinglePlayer";
+}
+
+
+<div class="single-player-background">
+    <div class="body-container">
+        <div class="single-player-background">
+            <form method="post">
+                <div class="blackjack-table-header"></div>
+
+                <div id="divDealerCards" class="dealer-cards"></div>
+                <div id="divStatusMessage" class="status-message" ></div>
+                <div id="divPlayerCards" class="single-player-cards"></div>
+
+                <div class="blackjack-menu">
+                    <div class="game-stats">
+                        <div class="credit-end-game">
+                            <label class="menu-label">CREDIT</label>
+                            <input type="text" asp-for="Scores.GameScore" id="txtCreditAmount"  />
+                        </div>
+                        <div class="bet-up-down">
+                            <label class="menu-label">BET</label>
+                            <input type="text" id="txtBetAmount" />
+                        </div>
+                        <div class="won-stand">
+                            <label class="menu-label">WINNINGS</label>
+                            <input asp-for="Scores.Winnings" id="txtWinnings" />
+                        </div>
+                        <div class="loss-deal">
+                            <label class="menu-label">LOSSES</label>
+                            <input asp-for="Scores.Losses" id="txtLosses" />
+                        </div>
+                    </div>
+
+                    <div class="blackjack-buttons">
+                        <button type="button" class="btn restart-game" id="btnStartGame" onclick="restartGame()">RESTART GAME</button>
+                        <div class="bet-buttons">
+                            <button type="button" id="btnDecreaseBet" class="btn-bet" onclick="decreaseBet()">-</button>
+                            <button type="button" id="btnIncreaseBet" class="btn-bet" onclick="increaseBet()">+</button>
+                        </div>
+                        <button type="button" class="btn stand" id="btnHitMe" onclick="hitMe()">HIT ME</button>
+                        <button type="button" class="btn stand" id="btnStand" onclick="stand()">STAND</button>
+                        <button type="button" class="btn deal" id="btnDeal" onclick="deal();">DEAL</button>
+                        <button type="button" class="btn newHand" id="btnDeal" onclick="deal();">NEW HAND</button>
+                        <button type="submit" class="btn end-game" id="btnEndGame">END GAME</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@*<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Scores.GameType" class="control-label"></label>
+                <input asp-for="Scores.GameType" class="form-control" />
+                <span asp-validation-for="Scores.GameType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scores.PlayerID" class="control-label"></label>
+                <input asp-for="Scores.PlayerID" class="form-control" />
+                <span asp-validation-for="Scores.PlayerID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scores.Winnings" class="control-label"></label>
+                <input asp-for="Scores.Winnings" class="form-control" />
+                <span asp-validation-for="Scores.Winnings" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scores.Losses" class="control-label"></label>
+                <input asp-for="Scores.Losses" class="form-control" />
+                <span asp-validation-for="Scores.Losses" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scores.GameScore" class="control-label"></label>
+                <input asp-for="Scores.GameScore" class="form-control" />
+                <span asp-validation-for="Scores.GameScore" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>*@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

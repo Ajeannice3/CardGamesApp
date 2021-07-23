@@ -1,0 +1,356 @@
+﻿.body-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.logo {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: white;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.index-background {
+    background-image: url("/images/green_and_cards_background2.jpg");
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-player-background {
+    background-image: url("/images/blank_table_background.jpg");
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.multi-player-background {
+    background-image: url("/images/multiplayer_table1.jpg");
+    width: 900px;
+    height: 600px;
+}
+
+.player-scores-background {
+    background-image: url("/images/plain_green_background.jpg");
+    width: 900px;
+    height: 600px;
+}
+
+.table-text {
+    color: white;
+}
+
+.login-register-forms {
+    margin-left: 40px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.login-register-forms h1 {
+    color: white;
+    margin: 20px 0px 30px 0px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-label {
+    font-size: 16px;
+    color: white;
+    opacity: 1;
+   /* padding-bottom: 5px;*/
+    width: 100px;
+}
+
+.form-control {
+    box-shadow: none;
+    background-color: #f7f2f2;
+    border-radius: 0px;
+    border-color: #119696;
+    border-style: none none solid none;
+    width: 200px;
+    padding: 0px 20px 0px 0px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+}
+
+.blackjack-table-header {
+    color: white;
+    z-index: 100;
+    /*background-color: aliceblue;*/
+    width: 1000px;
+    height: 80px;
+}
+
+.dealer-cards {
+    color: white;
+    z-index: 100;
+    /*background-color: blue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    height: 275px;
+}
+
+.single-player-cards {
+    color: white;
+    z-index: 100;
+    /*background-color: coral;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 1000px;
+    height: 275px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #119696;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin: 3px 0px 0px 3px;
+}
+
+.login-register-btns {
+    margin: 10px 8px 0px 0px;
+    /*margin-left: 0px;*/
+    background-color: red;
+    border-radius: 1px;
+    padding: 10px 20px;
+}
+
+.deal {
+    background-color: green;
+    width: 120px;
+}
+
+.newHand {
+    background-color: green;
+}
+
+.restart-game {
+    background-color: green;
+    width: 200px;
+    margin-right: 2px;
+}
+
+.end-game {
+    background-color: red;
+}
+
+.stand {
+    background-color: #999;
+    width: 150px;
+}
+
+.bet-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-bet {
+    color: red;
+    background-color: #999;
+    height: 35px;
+    width: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-top: 3px;
+}
+
+.btn-cancel {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    background: #999;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.blackjack-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    color: white;
+    z-index: 100;
+    background-color: silver;
+    width: 1000px;
+    height: 140px;
+}
+
+.menu-label {
+    font-size: 16px;
+    color: white;
+    opacity: 1;
+    vertical-align: middle;
+    /* padding-bottom: 5px;*/
+    width: 250px;
+    height: 80px;
+}
+
+.game-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    color: white;
+    z-index: 100;
+    background-color: silver;
+    width: 1000px;
+    height: 70px;
+}
+
+.blackjack-buttons {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    z-index: 100;
+    background-color: silver;
+    width: 1000px;
+    height: 120px;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.credit-end-game {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: nowrap;
+}
+
+.bet-up-down {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.won-stand {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.loss-deal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.status-message {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.menu-label {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    height: 30px;
+}
+
+/* playing cards */
+.card {
+    font-family: sans-serif;
+    position: relative;
+    width: 105px;
+    height: 150px;
+    margin-left: 4px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card.spades,
+.card.clubs {
+    color: black;
+}
+
+.card.hearts,
+.card.diamonds {
+    color: red;
+}
+
+.card-value-suit {
+    display: inline-block;
+    position: absolute;
+}
+
+.card-value-suit.top {
+    top: 5px;
+    left: 5px;
+}
+
+.card-value-suit.bot {
+    transform: rotate(180deg);
+    bottom: 5px;
+    right: 5px;
+}
+
+.card-suit {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+}

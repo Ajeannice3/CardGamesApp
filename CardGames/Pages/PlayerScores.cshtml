@@ -1,0 +1,60 @@
+﻿@page
+@model CardGames.Pages.PlayerScoresModel
+
+@{
+    ViewData["Title"] = "PlayerScores";
+}
+
+<h1>Your Scores</h1>
+
+<div class="player-scores-background">
+    <table class="table table-text">
+        <thead>
+            <tr>
+                <th>
+                    Game Type
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Scores[0].PlayerID)
+                    </th>*@
+                <th>
+                    Winnings
+                </th>
+                <th>
+                    Losses
+                </th>
+                <th>
+                    Game Score
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Scores)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GameType)
+                    </td>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.PlayerID)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Winnings)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Losses)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GameScore)
+                    </td>
+                    @*<td>
+                            <a asp-page="./Edit" asp-route-id="@item.GameID">Edit</a> |
+                            <a asp-page="./Details" asp-route-id="@item.GameID">Details</a> |
+                            <a asp-page="./Delete" asp-route-id="@item.GameID">Delete</a>
+                        </td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
